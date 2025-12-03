@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quantum Quake Builds</title>
+
+    <style>
+body {  
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 140px;
+}
+nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-title {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    opacity: 0.9;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #555555;
+}
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.pc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+        /* PC CARD */
+.pc-card {
+    width: 280px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin: 0 auto;
+}
+
+.pc-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #121212;
+}
+.pc-image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.pc-image img {            
+		width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pc-title {
+    margin: 18px 0 6px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pc-price {
+  	color: #555;
+    margin: 3px 0;
+}
+
+.pc-specs {
+		display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+.spec span {
+  	display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.spec small {
+    color: #666;
+    font-size: 12px;
+  }
+.footer {
+    background: #0d0d0d;
+    color: #ddd;
+    padding: 40px 20px 10px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    max-width: 280px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0 5px;
+    border-top: 1px solid #222;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-title">Quantum<br>Quake<br>Builds</div>
+        <a href="Index.html">Home</a>
+        <a href="Products.html">PC Parts</a>
+        <a href="PreBuilts.html">Pre-Builts</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <h2 class="page-title">Latest Pre-Built Drops</h2>
+
+    <!-- PC GRID -->
+    <div class="pc-grid">
+
+            <!-- CARD 1 -->
+                 <div class="pc-card">
+            <div class="pc-image">
+                <img src="tranquility.jpg" alt="Mid-range performance">
+            </div>
+
+            <h3 class="pc-title">Tranquility v5</h3>
+            <p class="pc-price">The Best of Best.</p>
+            <p class="pc-price">From $3499.00</p>
+
+            <div class="pc-specs">
+                <div class="spec"><span>Core 9 Ultra 285K</span><small>CPU</small></div>
+                <div class="spec"><span>RTX 5090</span><small>GPU</small></div>
+                <div class="spec"><span>64GB DDR5</span><small>RAM</small></div>
+                <div class="spec"><span>4TB SSD</span><small>Storage</small></div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="pc-card">
+            <div class="pc-image">
+                <img src="pc3.jpeg" alt="Sail into 4K">
+            </div>
+
+            <h3 class="pc-title">Voyage</h3>
+            <p class="pc-price">Sail into 4K gaming.</p>
+            <p class="pc-price">From $2799.00</p>
+
+            <div class="pc-specs">
+                <div class="spec"><span>Ryzen 7 9800X3D</span><small>CPU</small></div>
+                <div class="spec"><span>RTX 5080</span><small>GPU</small></div>
+                <div class="spec"><span>32GB DDR5</span><small>RAM</small></div>
+                <div class="spec"><span>2TB SSD</span><small>Storage</small></div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="pc-card">
+            <div class="pc-image">
+                <img src="56.jpeg" alt="Insane budget power">
+            </div>
+
+            <h3 class="pc-title">Obliterate</h3>
+            <p class="pc-price">Insane power on a budget.</p>
+            <p class="pc-price">From $1250.00</p>
+
+            <div class="pc-specs">
+                <div class="spec"><span>Ryzen 5 5600X</span><small>CPU</small></div>
+                <div class="spec"><span>RTX 5060</span><small>GPU</small></div>
+                <div class="spec"><span>16GB DDR5</span><small>RAM</small></div>
+                <div class="spec"><span>1TB SSD</span><small>Storage</small></div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="pc-card">
+            <div class="pc-image">
+                <img src="41.jpeg" alt="Mid-range performance">
+            </div>
+
+            <h3 class="pc-title">Shadow Recon</h3>
+            <p class="pc-price">Mid-range peak.</p>
+            <p class="pc-price">From $1549.00</p>
+
+            <div class="pc-specs">
+                <div class="spec"><span>Ryzen 5 5600X</span><small>CPU</small></div>
+                <div class="spec"><span>RX 9060 XT 16GB</span><small>GPU</small></div>
+                <div class="spec"><span>32GB DDR5</span><small>RAM</small></div>
+                <div class="spec"><span>1TB SSD</span><small>Storage</small></div>
+            </div>
+        </div>
+        <!-- CARD 5 -->
+                 <div class="pc-card">
+            <div class="pc-image">
+                <img src="21.jpg" alt="Mid-range performance">
+            </div>
+
+            <h3 class="pc-title">Frost Nova v6</h3>
+            <p class="pc-price">Icy Cold in performance.</p>
+            <p class="pc-price">From $2099.00</p>
+
+            <div class="pc-specs">
+                <div class="spec"><span>Ryzen 5 9600X</span><small>CPU</small></div>
+                <div class="spec"><span>RX 9070</span><small>GPU</small></div>
+                <div class="spec"><span>32GB DDR5</span><small>RAM</small></div>
+                <div class="spec"><span>2TB SSD</span><small>Storage</small></div>
+            </div>
+        </div>
+        <!-- CARD 6 -->
+         <div class="pc-card">
+            <div class="pc-image">
+                <img src="63.jpeg" alt="Mid-range performance">
+            </div>
+
+            <h3 class="pc-title">Dark Nova v2</h3>
+            <p class="pc-price">Cheapest of them all.</p>
+            <p class="pc-price">From $750.00</p>
+
+            <div class="pc-specs">
+                <div class="spec"><span>Ryzen 5 3600</span><small>CPU</small></div>
+                <div class="spec"><span>RTX 3060ti</span><small>GPU</small></div>
+                <div class="spec"><span>16GB DDR5</span><small>RAM</small></div>
+                <div class="spec"><span>512GB SSD</span><small>Storage</small></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quantum Quake Builds</h3>
+            <p>Your destination for premium PC parts & custom-built performance machines.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">PC Parts</a></li>
+                <li><a href="#">Pre-Builts</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: support@qqbuilds.com</p>
+            <p>Phone: 051-4039283</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a>Instagram: Quantum_Quake_Builds_Isb</a></li>
+                <li><ai>Twitter: QuantumBuilds</ai></li>
+            </ul>
+            <div class="social-icons">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Quantum Quake Builds. All rights reserved.</p>
+    </div>
+</footer>
+
+		<script>
+    const pcLinks = {
+        "Tranquility v5": "Tranquility.html",
+        "Voyage": "https://zttbuilds.com/collections/gaming-pc-prebuilts",
+        "Obliterate": "https://zttbuilds.com/collections/gaming-pc-prebuilts",
+		"Frost Nova v6": "https://zttbuilds.com/collections/gaming-pc-prebuilts",
+		"Shadow Recon": "https://zttbuilds.com/collections/gaming-pc-prebuilts",
+        "Dark Nova v2": "https://zttbuilds.com/collections/gaming-pc-prebuilts",
+
+    };
+    const cards = document.querySelectorAll(".pc-card");
+    cards.forEach(card => {
+        const title = card.querySelector(".pc-title").innerText.trim();
+
+        if (pcLinks[title]) {
+            card.style.cursor = "pointer";
+            card.addEventListener("click", () => {
+                window.open(pcLinks[title], "_black");
+            });
+        }
+    });
+		</script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quantum Quake Builds</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-title {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    opacity: 0.9;
+}
+
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #555555;
+}
+
+.video-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    width: 80%;
+}
+
+.overlay h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.overlay p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #0d0d0d;
+    color: #ddd;
+    padding: 40px 20px 10px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    max-width: 280px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0 5px;
+    border-top: 1px solid #222;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-title" >Quantum<br>Quake<br>Builds</div>
+    <a href="Index.html">Home</a>
+    <a href="Products.html">PC Parts</a>    
+    <a href="PreBuilts.html">Pre-Builts</a>
+    <a href="Contact.html">Contact Us</a>
+</nav>
+
+<div class="video-container">
+    <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <p>NEW DROP</p>
+        <h1>Tranquility</h1>
+        <p>Ready to conquer</p>
+        <a class="cta-btn" href="tranquility.html">Tranquility v5 ➜</a>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quantum Quake Builds</h3>
+            <p>Your destination for premium PC parts & custom-built performance machines.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">PC Parts</a></li>
+                <li><a href="#">Pre-Builts</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: support@qqbuilds.com</p>
+            <p>Phone: 051-4039283</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a>Instagram: Quantum_Quake_Builds_Isb</a></li>
+                <li><ai>Twitter: QuantumBuilds</ai></li>
+            </ul>
+            <div class="social-icons">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Quantum Quake Builds. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
